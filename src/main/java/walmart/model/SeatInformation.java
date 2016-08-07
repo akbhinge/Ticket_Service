@@ -1,4 +1,4 @@
-package walmartTest.model;
+package walmart.model;
 
 /*
     Class containing all the necessary seat information for the theatre

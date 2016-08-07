@@ -1,11 +1,7 @@
-package walmartTest.service;
+package walmart.service;
 
-
-import walmartTest.model.SeatHold;
-
+import walmart.model.SeatHold;
 import java.util.Optional;
-
-
 
 public interface TicketService {
 
