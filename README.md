@@ -6,5 +6,5 @@ Ticket Service Assignment- Walmart
 - 2. Junit
 - 3. Maven (build tool)
 
--- Command to build the application using Maven
+# Command to build the application using Maven
 - mvn test
