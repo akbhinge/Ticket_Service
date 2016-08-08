@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6bbe8e8-9ff3-440f-bd00-83437ea38b9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/walmartTest/TicketServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/walmart/model/SeatHold.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/model/SeatHoldInformation.java" />
     </list>
     <ignored path="TIcket_Service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -654,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470626539259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added modifications to TickestServiceImpl class and TicketServiceTest class">
+      <created>1470662806382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1470662806382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -734,7 +737,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed code for important classes" />
     <MESSAGE value="Completed all the methods for the TicketService interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed all the methods for the TicketService interface" />
+    <MESSAGE value="Added modifications to TickestServiceImpl class and TicketServiceTest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added modifications to TickestServiceImpl class and TicketServiceTest class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
