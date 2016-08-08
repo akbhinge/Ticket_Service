@@ -1,6 +1,6 @@
 package walmart.service;
 
-import walmart.model.SeatHold;
+import walmart.model.SeatHoldInformation;
 import java.util.Optional;
 
 public interface TicketService {
@@ -19,10 +19,10 @@ public interface TicketService {
          * @param minLevel the minimum venue level
          * @param maxLevel the maximum venue level
          * @param customerEmail unique identifier for the customer
-         * @return a SeatHold object identifying the specific seats and related
+         * @return a SeatHoldInformation object identifying the specific seats and related
         information
          */
-        SeatHold findAndHoldSeats(int numSeats, Optional<Integer> minLevel, Optional<Integer> maxLevel, String customerEmail);
+        SeatHoldInformation findAndHoldSeats(int numSeats, Optional<Integer> minLevel, Optional<Integer> maxLevel, String customerEmail);
         /**
          * Commit seats held for a specific customer
          *

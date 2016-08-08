@@ -2,7 +2,7 @@ package walmart.service;
 
 
 import walmart.model.LevelInformation;
-import walmart.model.SeatHold;
+import walmart.model.SeatHoldInformation;
 import walmart.model.SeatInformation;
 
 import java.util.ArrayList;
@@ -49,6 +49,8 @@ public class TicketServiceImpl implements TicketService {
 
     public int numSeatsAvailable(Optional<Integer> venueLevel){
 
+        int totalSeats = 0;
+
         if(venueLevel.get() < 1  || venueLevel.get()> 4)
         {
             System.out.println("Unauthorized Venue Level");
@@ -59,21 +61,23 @@ public class TicketServiceImpl implements TicketService {
 
         }else{
 
-           int totalSeats = 0;
-
             /*
                 Get total available seats from all the levels
              */
-           for(int i=0;i<4;i++){
+           for(int i=0;i<=4;i++){
                totalSeats += availableVenue.get(venueLevel.get()).getAvailableSeats().size();
             }
             return totalSeats;
         }
     }
 
-    public SeatHold findAndHoldSeats(int numSeats, Optional<Integer> minLevel, Optional<Integer> maxLevel, String customerEmail){
+    /*
+        Method to find and hold seats on behalf of a customer
+     */
 
-        SeatHold seatHold;
+    public SeatHoldInformation findAndHoldSeats(int numSeats, Optional<Integer> minLevel, Optional<Integer> maxLevel, String customerEmail){
+
+        SeatHoldInformation seatHoldInformation;
 
         if(minLevel.get() < 1 || minLevel.get() > 4 || minLevel.get() > maxLevel.get()){
                 System.out.println("Unauthorized Min level");
@@ -105,8 +109,8 @@ public class TicketServiceImpl implements TicketService {
                     }
                 }
             }
-            seatHold = new SeatHold(customerEmail,heldSeats);
-            return seatHold;
+            seatHoldInformation = new SeatHoldInformation(customerEmail,heldSeats);
+            return seatHoldInformation;
         }
         return null;
     }
@@ -116,13 +120,13 @@ public class TicketServiceImpl implements TicketService {
      */
     public String reserveSeats(int seatHoldId, String customerEmail){
 
-        SeatHold seatHold;
-        seatHold = new SeatHold(customerEmail,heldSeats);
+        SeatHoldInformation seatHoldInformation;
+        seatHoldInformation = new SeatHoldInformation(customerEmail,heldSeats);
 
         if(heldSeats.size()!=0){
-            if(seatHold.getCustomerEmail() == customerEmail){
-                    heldSeats.remove(seatHold.getAvailableSeats().size());
-                    reservedSeats.add(seatHold.getAvailableSeats().get(seatHoldId));
+            if(seatHoldInformation.getCustomerEmail() == customerEmail){
+                    heldSeats.remove(seatHoldInformation.getAvailableSeats().size());
+                    reservedSeats.add(seatHoldInformation.getAvailableSeats().get(seatHoldId));
             }
             return "You have successfully reserved tickets";
         }

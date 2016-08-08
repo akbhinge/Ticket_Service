@@ -7,12 +7,12 @@ import java.util.List;
  *
  */
 
-public class SeatHold {
+public class SeatHoldInformation {
 
     private String customerEmail;
     private List<SeatInformation> availableSeats;
 
-    public SeatHold(String customerEmail, List<SeatInformation> availableSeats){
+    public SeatHoldInformation(String customerEmail, List<SeatInformation> availableSeats){
 
         this.customerEmail = customerEmail;
         this.availableSeats = availableSeats;
