@@ -21,7 +21,7 @@ public class TicketServiceImpl implements TicketService {
 
     private HashMap<Integer, LevelInformation> availableVenue;
     private List<SeatInformation> heldSeats;
-
+    private List<SeatInformation> reservedSeats;
 
     public TicketServiceImpl(){
 
@@ -38,6 +38,7 @@ public class TicketServiceImpl implements TicketService {
         availableVenue.put(level4.getlevelId(),level4);
 
         heldSeats= new ArrayList<SeatInformation>();
+        reservedSeats = new ArrayList<SeatInformation>();
     }
 
     /**
@@ -110,11 +111,22 @@ public class TicketServiceImpl implements TicketService {
         return null;
     }
 
-
     /*
-     Method to reserve seats based on customer request*/
+     Method to reserve seats based on customer request
+     */
     public String reserveSeats(int seatHoldId, String customerEmail){
 
+        SeatHold seatHold;
+        seatHold = new SeatHold(customerEmail,heldSeats);
+
+        if(heldSeats.size()!=0){
+            if(seatHold.getCustomerEmail() == customerEmail){
+                    heldSeats.remove(seatHold.getAvailableSeats().size());
+                    reservedSeats.add(seatHold.getAvailableSeats().get(seatHoldId));
+            }
+            return "You have successfully reserved tickets";
+        }
+        return  "Reservation Unsuccessful";
     }
 
 }

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6bbe8e8-9ff3-440f-bd00-83437ea38b9a" name="Default" comment="Completed code for important classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/walmart/model/SeatHold.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/walmartTest/model/SeatHold.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/walmartTest/service/TicketServiceImpl.java" afterPath="" />
+    <list default="true" id="c6bbe8e8-9ff3-440f-bd00-83437ea38b9a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/walmartTest/model/LevelInformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/walmartTest/model/SeatHold.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/walmartTest/model/SeatInformation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/walmartTest/service/TicketService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/walmartTest/service/TicketServiceImpl.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/walmartTest/model/LevelInformation.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/model/LevelInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/walmartTest/model/SeatInformation.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/model/SeatInformation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/walmartTest/service/TicketService.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" />
     </list>
     <ignored path="TIcket_Service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="SeatHold.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/walmart/model/SeatHold.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="286">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding>
                 <element signature="e#563#564#0" expanded="true" />
                 <element signature="e#613#614#0" expanded="true" />
@@ -98,8 +97,8 @@
       <file leaf-file-name="TicketServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+            <state relative-caret-position="48">
+              <caret line="119" column="57" selection-start-line="119" selection-start-column="57" selection-end-line="119" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/main/java/walmartTest/model/SeatHold.java" />
         <option value="$PROJECT_DIR$/src/main/java/walmartTest/service/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/walmart/model/SeatHold.java" />
-        <option value="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -598,6 +597,14 @@
       <option name="presentableId" value="Default" />
       <updated>1470269453090</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed code for important classes">
+      <created>1470614044250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1470614044276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -764,6 +771,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/walmart/model/SeatInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -774,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/walmart/model/SeatHold.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="286">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding>
             <element signature="e#563#564#0" expanded="true" />
             <element signature="e#613#614#0" expanded="true" />
@@ -787,20 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/walmart/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/walmart/service/TicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+        <state relative-caret-position="48">
+          <caret line="119" column="57" selection-start-line="119" selection-start-column="57" selection-end-line="119" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
