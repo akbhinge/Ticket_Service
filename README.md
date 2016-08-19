@@ -1,5 +1,5 @@
 # Ticket_Service
-Ticket Service Assignment- Walmart
+A Java Program to build a ticket service application
 
 - Technologies used
 - 1. Java
