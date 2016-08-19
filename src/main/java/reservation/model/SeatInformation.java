@@ -1,4 +1,4 @@
-package walmart.model;
+package reservation.model;
 
 /*
     Class containing all the necessary seat information for the theatre

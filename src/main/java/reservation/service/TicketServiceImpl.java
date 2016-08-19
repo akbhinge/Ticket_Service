@@ -1,9 +1,9 @@
-package walmart.service;
+package reservation.service;
 
 
-import walmart.model.LevelInformation;
-import walmart.model.SeatHoldInformation;
-import walmart.model.SeatInformation;
+import reservation.model.LevelInformation;
+import reservation.model.SeatHoldInformation;
+import reservation.model.SeatInformation;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -130,7 +130,7 @@ public class TicketServiceImpl implements TicketService {
             }
             return "You have successfully reserved tickets";
         }
-        return  "Reservation Unsuccessful";
+        return  "reservation Unsuccessful";
     }
 
 }

@@ -1,4 +1,4 @@
-package walmart.model;
+package reservation.model;
 
 import java.util.List;
 

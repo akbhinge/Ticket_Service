@@ -1,6 +1,6 @@
-package walmart.service;
+package reservation.service;
 
-import walmart.model.SeatHoldInformation;
+import reservation.model.SeatHoldInformation;
 import java.util.Optional;
 
 public interface TicketService {

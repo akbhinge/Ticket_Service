@@ -1,12 +1,5 @@
-package walmartTest;
+package reservationTest;
 
-
-import org.junit.Assert;
-import org.junit.Test;
-import walmart.model.SeatHoldInformation;
-import walmart.service.TicketService;
-
-import java.util.Optional;
 
 public class TicketServiceTest {
 /*
